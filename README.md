@@ -28,3 +28,36 @@ Once approved, a confirmation email is sent to the user. This email notifies the
 <img src="adminarrove.jpg" width="100" height="200" />
 <img src="foodapp.jpg" width="100" height="200" />
 <img src="thankyou.jpg" width="100" height="200" />
+<br>
+
+## User Login
+User logs in and accesses the dashboard.
+
+View Dishes
+Profile
+Favorites
+<br>
+<img src="fooduserlogin.jpg" width="100" height="200" />
+<img src="userdashboardfood" width="100" height="200" />
+<br>
+## Create Admin
+Username
+Password
+ConfirmPassword
+<br>
+<img src="adminsignupfood" width="100" height="200" />
+
+<br>
+## Order
+Admin uploads dishes with Name Price Image Description These dishes are stored and shown to users.
+Normal Order Select any dish → Place order. • Special Order Minimum 5 dishes required.
+<img src="orderfood1" width="100" height="200" />
+<img src="specialorder" width="100" height="200" />
+<img src="speicalorder1" width="100" height="200" />
+<img src="clickorder" width="100" height="200" />
+<img src="ordernow" width="100" height="200" />
+<br>
+<img src="View Order" width="100" height="200" />
+
+
+
