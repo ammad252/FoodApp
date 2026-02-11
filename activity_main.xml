@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dash"
+    tools:context=".MainActivity">
+
+    <!--    Animation SignUP   -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="175dp"
+        android:layout_height="137dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="93385-login.json"
+        app:lottie_loop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Firstname"
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstname"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Lastname"
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Email"
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--    <com.google.android.material.textfield.TextInputLayout-->
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="pincode"
+
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="password_toggle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwd"
+                android:maxLength="6"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneno"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:hint="+92"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Address"
+
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="City"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/button_radius2"
+        android:text="Sign Up"
+        android:textSize="@dimen/_10sdp" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="@dimen/_12sdp"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:text="OR"-->
+    <!--        android:layout_gravity="center"/>-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="@dimen/_12sdp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:text="If you have an account"-->
+    <!--        android:layout_gravity="center"/>-->
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/button_radius2"
+        android:text="Sign In "
+
+        android:textSize="@dimen/_10sdp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/verify"-->
+<!--        android:layout_width="@dimen/_230sdp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:text="Verification "-->
+<!--        android:textSize="@dimen/_10sdp"-->
+<!--        />-->
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dash"
+    android:fillViewport="true"
+    tools:context=".Admin_Daskboard">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/_40sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <!--            1st CardView-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/detail"
+                app:lottie_autoPlay="true"
+                android:layout_width="145dp"
+                android:layout_height="140dp"
+                app:lottie_fileName="67221-food-market-app-interaction.json"
+                app:lottie_loop="true"/>
+            <!--            <ImageView-->
+            <!--        -->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="125dp"-->
+            <!--                app:srcCompat="@drawable/diethistroy" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OrderDetail"
+                android:layout_marginTop="124dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+        </androidx.cardview.widget.CardView>
+        <!--            2nd CardView-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+
+                android:id="@+id/dish"
+                app:lottie_autoPlay="true"
+                android:layout_width="145dp"
+                android:layout_height="140dp"
+                app:lottie_fileName="47294-view-hide-icon.json"
+                app:lottie_loop="true"/>
+
+            <!--            <ImageView-->
+            <!--               -->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="125dp"-->
+            <!--                app:srcCompat="@drawable/nutrition" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dishes View"
+                android:layout_marginTop="124dp"
+                android:layout_marginLeft="45dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <!--            1st CardView-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/addadmin"
+                app:lottie_autoPlay="true"
+                android:layout_width="145dp"
+                android:layout_height="140dp"
+                app:lottie_fileName="88370-add-to-cart.json"
+                app:lottie_loop="true"/>
+            <!--            <ImageView-->
+            <!--        -->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="125dp"-->
+            <!--                app:srcCompat="@drawable/diethistroy" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Admin"
+                android:layout_marginTop="124dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+        </androidx.cardview.widget.CardView>
+        <!--            2nd CardView-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+
+                android:id="@+id/upload"
+                app:lottie_autoPlay="true"
+                android:layout_width="145dp"
+                android:layout_height="140dp"
+                app:lottie_fileName="81153-admin.json"
+                app:lottie_loop="true"/>
+
+            <!--            <ImageView-->
+            <!--               -->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="125dp"-->
+            <!--                app:srcCompat="@drawable/nutrition" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Recipes"
+                android:layout_marginTop="124dp"
+                android:layout_marginLeft="45dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <!--            1st CardView-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/approve"
+            android:layout_width="140dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_80sdp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="approve.json"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="124dp"
+                android:text="User Approver"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="145dp"-->
+<!--            android:layout_height="145dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            app:cardBackgroundColor="@color/White"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:elevation="10dp">-->
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+
+<!--                android:id="@+id/approvelist"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                android:layout_width="145dp"-->
+<!--                android:layout_height="140dp"-->
+<!--                app:lottie_fileName="list.json"-->
+<!--                app:lottie_loop="true"/>-->
+
+            <!--            <ImageView-->
+            <!--               -->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="125dp"-->
+            <!--                app:srcCompat="@drawable/nutrition" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Approver list"-->
+<!--                android:layout_marginTop="124dp"-->
+<!--                android:layout_marginLeft="45dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"/>-->
+<!--        </androidx.cardview.widget.CardView>-->
+    </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Admin_Signup">
+
+    <!--    Animation SignUP   -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="266dp"
+        android:layout_height="168dp"
+        android:layout_gravity="center"
+
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="117764-sign-up.json"
+        app:lottie_loop="true" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/Login"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginLeft="55dp"-->
+        <!--            android:backgroundTint="@color/White"-->
+        <!--            android:text="SignIn"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="23dp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <TextView
+
+            android:id="@+id/SignupScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:backgroundTint="@color/White"
+            android:text="Create Admin Account"
+
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="UserName"
+
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:background="@color/whitesmoke"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            app:passwordToggleEnabled="true"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwd"
+                android:background="@color/whitesmoke"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Confirmpassword"
+           app:passwordToggleEnabled="true"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+
+            >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpassword"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:background="@color/whitesmoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reg"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_radius2"
+        android:text="Register"
+        android:textSize="@dimen/_11sdp"
+        />
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="@dimen/_12sdp"-->
+    <!--            android:layout_marginTop="@dimen/_10sdp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:text="OR"-->
+    <!--            android:layout_gravity="center"/>-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="@dimen/_12sdp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:text="If you have account"-->
+    <!--            android:layout_gravity="center"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Login"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:background="@drawable/button_radius"-->
+    <!--            android:text="Sign In "-->
+    <!--            android:textSize="16dp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

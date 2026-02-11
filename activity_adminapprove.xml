@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminapprove"
+    android:background="@drawable/bg">
+    <TextView
+        android:id="@+id/f_name"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/L_name"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/email"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/pincode"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/address"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+        android:textSize="24sp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/city"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/phoneno"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="411dp"
+        android:layout_height="466dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="women.json"
+        app:lottie_loop="true" />
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/shade"
+    tools:context=".SignInAdmin">
+
+        <!--    Layout of screen change button   -->
+
+        <!--    Animation LOGIN   -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="372dp"
+        android:layout_height="266dp"
+
+        android:layout_marginLeft="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="profile-password-unlock.json"
+        app:lottie_loop="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="250dp">
+
+
+
+        </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="-225dp"
+        android:layout_marginBottom="10dp"
+        android:hint="UserName"
+
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Username"
+            android:background="@color/whitesmoke"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:hint="Password"
+
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        app:endIconMode="password_toggle"
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:background="@color/whitesmoke"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/forgetpass"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Forgot Password?"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginLeft="@dimen/_78sdp"-->
+<!--            android:textColor="@color/black" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@drawable/button_radius2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_10sdp"
+                android:text="  Login Now  "
+                android:textSize="@dimen/_10sdp"
+                />
+
+<!--            <Button-->
+<!--                android:id="@+id/SignupScreen"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_33sdp"-->
+<!--                android:background="@drawable/button_radius"-->
+<!--                android:layout_marginLeft="@dimen/_100sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Create Account"-->
+<!--                android:elevation="@dimen/_10sdp"-->
+<!--                android:textSize="13dp"-->
+<!--                />-->
+           <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/LoginP"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@drawable/button_radius2"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_10sdp"
+                android:text="User"
+                android:textSize="@dimen/_10sdp"
+                />
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="@dimen/_8sdp"-->
+<!--                >-->
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="If you are Patient click "-->
+<!--                    android:layout_marginLeft="@dimen/_87sdp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="@dimen/_12sdp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/LoginP"-->
+<!--                    android:text="Here"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="@dimen/_13sdp"-->
+<!--                    android:textColor="@color/White"-->
+<!--                    />-->
+<!--                &lt;!&ndash;            <ImageButton&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:scaleX="0.2"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:scaleY="1.0"&ndash;&gt;-->
+<!--                &lt;!&ndash;                 />&ndash;&gt;-->
+
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
