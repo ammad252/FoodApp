@@ -48,6 +48,7 @@ ConfirmPassword
 <img src="adminsignupfood.jpg" width="100" height="200" />
 
 <br>
+
 ## Order
 Admin uploads dishes with Name Price Image Description These dishes are stored and shown to users.
 Normal Order Select any dish → Place order. • Special Order Minimum 5 dishes required.
