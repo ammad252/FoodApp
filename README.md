@@ -27,4 +27,4 @@ Once approved, a confirmation email is sent to the user. This email notifies the
 <br>
 <img src="adminarrove.jpg" width="100" height="200" />
 <img src="foodapp.jpg" width="100" height="200" />
-<img src="thanksyou.jpg" width="100" height="200" />
+<img src="thankyou.jpg" width="100" height="200" />
