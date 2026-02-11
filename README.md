@@ -4,3 +4,16 @@ Online Food Order & Delivery App is an Android-based system where the admin uplo
 ## Splash Screen
 <br>
 <img src="splash.jpg" width="100" height="200"/>
+<br>
+
+## **User Signup**
+
+User can create an account using email and password. Validation ensures:
+
+- Email format correct and not already registered  
+- Password minimum 8 characters with letters & numbers  
+
+<br>
+
+<img src="foodsignup.jpg" width="100" height="200"/>
+
